@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css(External) -->
+    <link rel="stylesheet" href="class_week2.css" type="text/css">
+</head>
+
+<body>
+    <!-- css -->
+    <h1>Title</h1>
+    <h2>css</h2>
+    <p>test css</p>
+    <p>test css</p>
+    <p>test css</p>
+    <p>test css</p>
+    <p>test css</p>
+
+    <form action="https://trex-sandwich.com/echo/" method="post">
+        <!-- method = get -->
+        <!-- https://trex-sandwich.com/echo/?firstName=da&lastName=da&profile_text_area=++++++++++++enter+text+here%0D%0A++++++++ad&browser_choice=firefox -->
+
+        <!-- method = post -->
+        <!-- https://trex-sandwich.com/echo/ -->
+        <!-- data can check from f12 network payload echo/ -->
+
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="firstName"><br>
+
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" id="lastName"><br>
+
+        <label for="profile_text">
+            Text area: <br>
+        </label>
+        <textarea name="profile_text_area" id="profile_text" cols="30" rows="10">
+            enter text here
+        </textarea>
+
+        <br><br>
+
+        <label for="ffCheckbox"> FireFox</label>
+        <input type="checkbox" name="browser_choice" value="firefox" id="ffCheckbox">
+        <label for="cCheckbox"> Chrome</label>
+        <input type="checkbox" name="browser_choice" value="chrome" id="cCheckbox">
+        <label for="sCheckbox"> Safari</label>
+        <input type="checkbox" name="browser_choice" value="safari" id="sCheckbox">
+        <label for="ieCheckbox"> Internet Explorer</label>
+        <input type="checkbox" name="browser_choice" value="ie" id="ieCheckbox">
+
+        <br>
+
+        <input type="submit" value="Submit for processing">
+        <!-- the values selected/provided in form controls are sent to the processing application -->
+
+        <input type="reset" value="Reset the form">
+        <!-- all form controls are reset to their initial values -->
+    </form>
+</body>
+
+</html>
